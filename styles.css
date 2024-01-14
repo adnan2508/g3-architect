@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 
+/*common shared styles*/
 * {
     font-family: 'Work Sans', sans-serif;
 }
@@ -90,7 +91,7 @@ nav a {
 
 /*main styles*/
 main {
-    max-width: 1440px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -106,12 +107,38 @@ main {
     gap: 1.5rem;
 }
 
-.teams-content{
+.teams-content {
     padding-left: 70px;
     padding-right: 70px;
 }
 
+.quick-list {
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
 
+.of-our {
+    color: #131313;
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.features {
+    color: #FF900E;
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.teams-description {
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+}
 
 /*Responsive styles*/
 /*Mobile devices*/
