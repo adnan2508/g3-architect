@@ -19,6 +19,13 @@
     font-weight: 600;
 }
 
+.section-title {
+    color: #131313;
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
 /* Header style */
 header {
     background-color: #ff900e1a;
@@ -140,6 +147,49 @@ main {
     font-weight: 400;
 }
 
+/*facts style started*/
+.facts-description {
+    max-width: 542px;
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.facts-card-container .cards {
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+}
+
+.facts-card-container .card-stats {
+    color: #424242;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.facts-card-container .card-title {
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/*facts style ended*/
+
+
 /*Responsive styles*/
 /*Mobile devices*/
 @media screen and (max-width:576px) {
@@ -147,12 +197,25 @@ main {
         padding: 20px;
     }
 
-    nav, .teams-container {
+    nav,
+    .teams-container, .facts-card-container {
         flex-direction: column;
     }
+    .facts-description {
+        margin: 10px auto;
+        text-align: center;
+    }
+    .facts-section-title {
+        text-align: center;
+    }
+
     .teams-image-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .teams-title, .teams-description, .teams-content {
+        text-align: center;
     }
 }
 
@@ -162,16 +225,31 @@ main {
         padding: 20px;
     }
 
-    nav, .teams-container {
+    nav,
+    .teams-container {
         flex-direction: column;
     }
+
     .teams-image-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
+
+    .teams-title, .teams-description, .teams-content {
+        text-align: center;
+    }
+
     .teams-content {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .facts-description {
+        margin: 10px auto;
+        text-align: center;
+    }
+    .facts-section-title {
+        text-align: center;
     }
 }
