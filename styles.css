@@ -148,7 +148,12 @@ main {
 }
 
 /*facts style started*/
+.facts-section-title {
+    margin-top: 120px;
+}
+
 .facts-description {
+    margin-top: 15px;
     max-width: 542px;
     color: #727272;
     font-family: Work Sans;
@@ -157,6 +162,7 @@ main {
 }
 
 .facts-card-container {
+    margin-top: 70px;
     display: flex;
     justify-content: space-around;
     gap: 10px;
@@ -189,6 +195,33 @@ main {
 
 /*facts style ended*/
 
+/* sponsors style*/
+.sponsors-title {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.sponsor-description {
+    max-width: 542px;
+    margin: 0 auto;
+    text-align: center;
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.sponsors-images {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+/* sponsors style end*/
+
 
 /*Responsive styles*/
 /*Mobile devices*/
@@ -198,13 +231,16 @@ main {
     }
 
     nav,
-    .teams-container, .facts-card-container {
+    .teams-container,
+    .facts-card-container, .sponsors-images {
         flex-direction: column;
     }
+
     .facts-description {
         margin: 10px auto;
         text-align: center;
     }
+
     .facts-section-title {
         text-align: center;
     }
@@ -214,9 +250,16 @@ main {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .teams-title, .teams-description, .teams-content {
+    .teams-title,
+    .teams-description,
+    .teams-content {
         text-align: center;
     }
+
+    .sponsors-images img {
+        width: 165px;
+    }
+
 }
 
 /*Tablet devices*/
@@ -226,7 +269,7 @@ main {
     }
 
     nav,
-    .teams-container {
+    .teams-container, .sponsors-images {
         flex-direction: column;
     }
 
@@ -236,7 +279,9 @@ main {
         gap: 1rem;
     }
 
-    .teams-title, .teams-description, .teams-content {
+    .teams-title,
+    .teams-description,
+    .teams-content {
         text-align: center;
     }
 
@@ -249,6 +294,7 @@ main {
         margin: 10px auto;
         text-align: center;
     }
+
     .facts-section-title {
         text-align: center;
     }
