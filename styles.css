@@ -133,7 +133,7 @@ main {
     font-weight: 700;
 }
 
-.features {
+.feature {
     color: #FF900E;
     font-family: Work Sans;
     font-size: 2.8rem;
@@ -146,6 +146,83 @@ main {
     font-size: 1rem;
     font-weight: 400;
 }
+
+/*feature styles*/
+.features {
+    margin-top: 100px;
+    display: flex;
+    gap: 80px;
+}
+
+.features .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+
+.feature-description {
+    max-width: 586px;
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.feature-card {
+    width: 550px;
+    height: 171px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.feature-card-title {
+    color: #131313;
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.feature-card-description {
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.badge {
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 15px;
+    margin: 0px;
+    position: relative;
+    bottom: 120px;
+    right: 50px;
+}
+
+.badge h2 {
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.badge p {
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+/* ends */
 
 /*facts style started*/
 .facts-section-title {
@@ -232,7 +309,8 @@ main {
 
     nav,
     .teams-container,
-    .facts-card-container, .sponsors-images {
+    .facts-card-container,
+    .sponsors-images, .features {
         flex-direction: column;
     }
 
@@ -260,6 +338,18 @@ main {
         width: 165px;
     }
 
+    .features img {
+        width: 90%;
+    }
+    .badge{
+        position: static;
+        width: 300px;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+
 }
 
 /*Tablet devices*/
@@ -269,7 +359,8 @@ main {
     }
 
     nav,
-    .teams-container, .sponsors-images {
+    .teams-container,
+    .sponsors-images, .features {
         flex-direction: column;
     }
 
@@ -297,5 +388,25 @@ main {
 
     .facts-section-title {
         text-align: center;
+    }
+
+    .feature-content .section-title {
+        text-align: center;
+    }
+    .feature-description{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .feature-card {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .feature-image {
+        margin: 0 auto;
+    }
+    .badge {
+        position: static;
+        margin: 5px auto;
     }
 }
